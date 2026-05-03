@@ -128,6 +128,13 @@ def main() -> int:
 
     conversation = _parse_transcript(transcript_path) if transcript_path else []
 
+    # Block 2.7: Stop fires per-turn but transcript_path is project-cumulative
+    # (grows across --resume). Submit only the most recent user+assistant pair —
+    # memU library has no chunking; an unbounded payload overflows the LLM
+    # context on every long-running project. See memory
+    # claude_code_transcript_is_cumulative.md.
+    conversation = conversation[-2:]
+
     if conversation:
         memorize_conversation(
             server_url=server_url,
