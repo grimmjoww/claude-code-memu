@@ -75,7 +75,7 @@ def _parse_transcript(transcript_path: str) -> list[dict[str, Any]]:
         return []
 
     conversation: list[dict[str, Any]] = []
-    now_iso = _dt.datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")
+    now_iso = _dt.datetime.now(_dt.UTC).strftime("%Y-%m-%d %H:%M:%S")
 
     try:
         with p.open("r", encoding="utf-8") as f:
