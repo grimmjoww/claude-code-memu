@@ -1,0 +1,26 @@
+[project]
+name = "grimmjoww-memu-mcp"
+version = "0.1.0"
+description = "OpenClaw MCP server that exposes the memU library as a memory backend over stdio."
+readme = "README.md"
+requires-python = ">=3.13"
+license = { text = "MIT" }
+authors = [{ name = "Willie", email = "willies578@gmail.com" }]
+dependencies = [
+    "memu>=1.5.1",
+    "mcp>=1.0.0",
+    "pydantic>=2.0.0",
+]
+
+[project.optional-dependencies]
+postgres = ["psycopg2-binary>=2.9.11"]
+
+[project.scripts]
+grimmjoww-memu-mcp = "server:run"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["server", "config"]
