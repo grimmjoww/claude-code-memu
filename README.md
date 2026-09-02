@@ -120,7 +120,7 @@ This repository demonstrates:
 - real HTTP-boundary tests;
 - a standard MCP tool surface alongside automatic hooks.
 
-The project was developed through an AI-assisted engineering workflow directed by **Willie Stewart / Phantom Horizons Studios**, including architecture decisions, implementation direction, test requirements, integration diagnosis, and revision against observed behavior.
+The project was developed through an AI-assisted engineering workflow directed by **Willie Stewart / Phantom Horizon Studios**, including architecture decisions, implementation direction, test requirements, integration diagnosis, and revision against observed behavior.
 
 ## Known cleanup boundary
 
