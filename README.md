@@ -74,8 +74,8 @@ Hook scoping uses:
 
 ```powershell
 $env:MEMU_SERVER_URL = "http://localhost:8000"
-$env:MEMU_USER_ID = "willie"
-$env:MEMU_AGENT_ID = "work-rei"
+$env:MEMU_USER_ID = "example-user"
+$env:MEMU_AGENT_ID = "work-agent"
 ```
 
 Use separate identifiers when multiple users or agent roles must not share the same default memory pool.
