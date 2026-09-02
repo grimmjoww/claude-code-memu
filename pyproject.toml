@@ -1,7 +1,7 @@
 [project]
 name = "grimmjoww-memu-mcp"
 version = "0.1.0"
-description = "MCP server and lifecycle hooks that connect Claude Code to a memU memory backend."
+description = "Unmaintained experimental memU integration; incomplete and not portfolio work."
 readme = "README.md"
 requires-python = ">=3.13"
 license = { text = "MIT" }
