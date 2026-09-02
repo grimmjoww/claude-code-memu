@@ -1,7 +1,7 @@
 [project]
 name = "grimmjoww-memu-mcp"
 version = "0.1.0"
-description = "OpenClaw MCP server that exposes the memU library as a memory backend over stdio."
+description = "MCP server and lifecycle hooks that connect Claude Code to a memU memory backend."
 readme = "README.md"
 requires-python = ">=3.13"
 license = { text = "MIT" }
