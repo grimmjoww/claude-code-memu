@@ -106,7 +106,7 @@ The hook tests use a real in-process HTTP server rather than replacing the netwo
 python -m pytest tests -q
 ```
 
-The test suite covers session-start recall, prompt-specific recall, stop-hook transcript parsing/capture, scoping, empty inputs, and soft-failure behavior.
+The test suite covers session-start recall, prompt-specific recall, stop-hook transcript parsing and latest-pair capture, user/agent scoping, empty prompts, empty transcripts, and missing transcript files. The shared HTTP helper also implements soft-failure behavior for network, timeout, and malformed-response conditions; those particular error paths are not directly exercised by the current tests.
 
 ## Portfolio notes
 
@@ -120,7 +120,7 @@ This repository demonstrates:
 - real HTTP-boundary tests;
 - a standard MCP tool surface alongside automatic hooks.
 
-The project was developed through an AI-assisted engineering workflow directed by **Willie Stewart / Phantom Horizon Studios**, including architecture decisions, implementation direction, test requirements, integration diagnosis, and revision against observed behavior.
+The project was developed through an AI-assisted engineering workflow directed by **Willie Stewart / Phantom Horizons Studios**, including architecture decisions, implementation direction, test requirements, integration diagnosis, and revision against observed behavior.
 
 ## Known cleanup boundary
 
